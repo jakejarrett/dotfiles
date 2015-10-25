@@ -1,0 +1,17 @@
+#!/bin/sh
+
+windowtitle(){
+	title=$(xdotool getactivewindow getwindowname 2>/dev/null)
+	if [ -z "$title" ]
+		then
+			echo "Desktop"
+
+	else
+		echo "$title"
+	fi
+}
+
+while true; do
+	echo " %{c}$(windowtitle) "
+	sleep 0.3s;
+done
