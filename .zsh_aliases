@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Aliases to start/kill bar
+alias killbar="pkill ~/.bar/clock & pkill ~/.bar/window & pkill ~/.bar/music & pkill lemonbar"
+alias startbar="~/.bar/clock & sleep .5s && ~/.bar/window & ~/.bar/music"
+
+# Webdev
+alias mksite="~/scripts/dev/dev"
+
+# Scrot
+alias scrot='cd ~/Pictures/Screenshots && scrot'
