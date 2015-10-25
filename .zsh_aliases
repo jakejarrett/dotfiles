@@ -9,3 +9,6 @@ alias mksite="~/scripts/dev/dev"
 
 # Scrot
 alias scrot='cd ~/Pictures/Screenshots && scrot'
+
+# Colortest
+alias colortest="~/scripts/colortest/colortest"
