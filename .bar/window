@@ -12,6 +12,8 @@ windowtitle(){
 }
 
 while true; do
-	echo " %{c}$(windowtitle) "
+	echo "%{l}%{B#FB9FB1} $(windowtitle) %{B}%{r}"
 	sleep 0.3s;
-done
+done |
+
+./lemonbar -g 1920x30 -F#FAFAFA -B#00333333 2>/dev/null | bash

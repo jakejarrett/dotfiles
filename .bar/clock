@@ -1,7 +1,5 @@
 #!/bin/sh
 
-#Define the battery
-# Define the clock
 Clock() {
 	DATE=$(date "+%a %b %d, %R")
 
@@ -13,6 +11,6 @@ Clock() {
 while true; do
 	echo "%{c}$(Clock)"
 	sleep 1;
-done
+done |
 
-#!./lemonbar -b -g 1920x30 -F#FAFAFA -B#333333
+./lemonbar -g 1920x30 -F#FAFAFA -B#333333

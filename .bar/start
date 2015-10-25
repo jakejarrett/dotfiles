@@ -1,5 +1,5 @@
-~/.bar/window | ~/.bar/lemonbar -g 350x30 -F#FAFAFA -B#fb9fb1 &
-~/.bar/music | ~/.bar/lemonbar -g 350x30+1570 -F#FAFAFA -B#6fc2ef &
-~/.bar/clock | ~/.bar/lemonbar -g 1220x30+350 -F#FAFAFA -B#333333 &
+~/.bar/clock &
+~/.bar/music &
+~/.bar/window &
 
 wait
