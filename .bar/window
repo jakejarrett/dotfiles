@@ -16,4 +16,4 @@ while true; do
 	sleep 0.3s;
 done |
 
-./lemonbar -g 1920x30 -F#FAFAFA -B#00333333 2>/dev/null | bash
+~/.bar/lemonbar -g 1920x30 -F#FAFAFA -B#00333333 2>/dev/null | bash

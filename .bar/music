@@ -25,8 +25,8 @@ Song() {
 }
 
 while true; do
-	echo "%{l}%{B#333333}  %{r}%{B#6FC2EF} $(Song) %{B}%{r}"
+	echo " %{r}%{B#6FC2EF} $(Song) %{B}%{r}"
 	sleep 0.1s;
 done |
 
-./lemonbar -g 1920x30 -F#FAFAFA -B#00333333 2>/dev/null | bash
+~/.bar/lemonbar -g 1920x30 -F#FAFAFA -B#00333333 2>/dev/null | bash

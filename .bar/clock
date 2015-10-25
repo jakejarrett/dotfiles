@@ -13,4 +13,4 @@ while true; do
 	sleep 1;
 done |
 
-./lemonbar -g 1920x30 -F#FAFAFA -B#333333
+~/.bar/lemonbar -g 1920x30 -F#FAFAFA -B#333333

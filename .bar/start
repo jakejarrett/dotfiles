@@ -1,5 +1,7 @@
-~/.bar/clock &
-~/.bar/music &
-~/.bar/window &
+#!/bin/sh
+
+exec ~/.bar/clock &
+exec ~/.bar/music &
+exec ~/.bar/window &
 
 wait
