@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Aliases to start/kill bar
-alias killbar="pkill ~/.bar/clock & pkill ~/.bar/window & pkill ~/.bar/music & pkill lemonbar"
-alias startbar="~/.bar/clock & sleep .5s && ~/.bar/window & ~/.bar/music"
+alias killbar="pkill ~/.config/.bar/clock & pkill ~/.config/.bar/window & pkill ~/.config/.bar/music & pkill lemonbar"
+alias startbar="~/.config/.bar/clock & sleep .5s && ~/.config/.bar/window & ~/.config/.bar/music"
 
 # Webdev
 alias mksite="~/scripts/dev/dev"

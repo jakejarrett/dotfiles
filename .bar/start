@@ -1,7 +1,0 @@
-#!/bin/sh
-
-exec ~/.bar/clock &
-exec ~/.bar/music &
-exec ~/.bar/window &
-
-wait
