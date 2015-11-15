@@ -2,7 +2,7 @@
 # jakes zshrc
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/jake/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # ZSH Theme
 ZSH_THEME="jreese"
