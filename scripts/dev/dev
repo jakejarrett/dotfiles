@@ -1,0 +1,52 @@
+#!/bin/bash
+generateNewProject ()
+{   # Make the directories before we populate them
+  cd ~/dev
+  mkdir $newProject
+  mkdir $newProject/app
+  mkdir $newProject/app/assets
+  mkdir $newProject/app/assets/css
+  mkdir $newProject/app/assets/js
+  mkdir $newProject/app/assets/js/dependencies
+  mkdir $newProject/app/assets/img
+  mkdir $newProject/app/sass
+  mkdir $newProject/app/sass/app
+
+  # Populate directories
+  touch $newProject/app/index.html
+  touch $newProject/app/Gruntfile.js
+  touch $newProject/app/assets/js/app.js
+  touch $newProject/app/assets/css/main.css
+  touch $newProject/app/sass/app/main.scss
+
+  # Copy app.scss to new development folder ~
+  cp ~/scripts/dev/files/app.scss ~/dev/$newProject/app/sass
+
+  cd ~/dev/$newProject
+  git init
+  git add .
+  git commit -m "Initial Files"
+
+  printf "\nDone creating $newProject";
+}
+
+read -p "What did you want to name the project? `echo $'\n> '`" newProject
+
+if [ ! -d "$newProject" ]; then
+    generateNewProject
+else
+    # If the folder already exists, We need to ask if the user wants to keep or remove that folder.
+    printf "\nOops. That view name already exists!\n"
+
+    read -p "Would you like to remove $newProject? Answer Y/N `echo $'\n> '`" yn
+
+    case $yn in
+        [Yy]* )
+            # If the user selected yes, remove the Folder & Then do the exact asame as we did earlier
+            rm -rf $newProject
+
+            generateNewProject;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+fi

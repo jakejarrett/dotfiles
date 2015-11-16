@@ -5,7 +5,7 @@ alias killbar="pkill ~/.config/.bar/clock & pkill ~/.config/.bar/window & pkill 
 alias startbar="~/.config/.bar/clock & sleep .5s && ~/.config/.bar/window & ~/.config/.bar/music"
 
 # Webdev
-alias mksite="~/scripts/dev/dev"
+alias mkproject="~/scripts/dev/dev"
 
 # Scrot
 alias scrot='cd ~/Pictures/Screenshots && scrot'
