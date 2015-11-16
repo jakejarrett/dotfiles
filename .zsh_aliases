@@ -12,3 +12,13 @@ alias scrot='cd ~/Pictures/Screenshots && scrot'
 
 # Colortest
 alias colortest="~/scripts/colortest/colortest"
+
+# tar commands to make life easy
+alias mktar="tar -cvf"
+alias untar="tar -xvf"
+
+alias mkbz2="tar -cvjf"
+alias unbz2="tar -xvjf"
+
+alias mkgz="tar -cvzf"
+alias ungz="tar -xvzf"
