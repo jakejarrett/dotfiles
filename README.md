@@ -1,6 +1,15 @@
-# My dotfiles
+# dotfiles
+![Screenshot](https://i.imgur.com/advreHU.png)
 
-![Screenshot](https://i.imgur.com/KskvTeL.png)
+### Setup
+Linux Distro `Ubuntu 15.10` <br />
+Window Manager `i3`<br />
+Compositor `compton` <br />
+GTK Icons `breeze` <br />
+Shell `zsh` <br />
+Terminal `gnome-terminal` <br />
+Terminal Font `monofur` <br />
+Text Editor `nano / atom` <br />
 
-## Notes
-* the music bar only works with soundnode, You will have to change that if you wish to use something else.
+### Notes
+* Requires playerctl for Media player support
