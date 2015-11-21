@@ -1,9 +1,9 @@
 # dotfiles
-![Screenshot](https://i.imgur.com/advreHU.png)
+![Screenshot](https://i.imgur.com/WRDSGpk.png)
 
 ### Setup
 Linux Distro `Ubuntu 15.10` <br />
-Window Manager `i3`<br />
+Window Manager `i3-gaps`<br />
 Compositor `compton` <br />
 GTK Icons `breeze` <br />
 Shell `zsh` <br />

@@ -95,6 +95,8 @@ set $workspace1 "1 >_"
 set $workspace2 "2 "
 set $workspace3 "3 Editor"
 set $workspace4 "4 Steam"
+set $workspace6 "6 OBS"
+set $workspace9 "9 Chat"
 set $workspace10 "10 Music"
 
 # switch to workspace
@@ -103,10 +105,10 @@ bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
 bindsym $mod+4 workspace $workspace4
 bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
+bindsym $mod+6 workspace $workspace6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
+bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
@@ -115,10 +117,10 @@ bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
 bindsym $mod+Shift+4 move container to workspace $workspace4
 bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+6 move container to workspace $workspace6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # Assign Windows to Workspaces
@@ -126,6 +128,8 @@ assign [class="Firefox"] $workspace2
 assign [class="Gedit"] $workspace3
 assign [class="Atom"] $workspace3
 assign [class="Steam"] $workspace4
+assign [class="obs"] $workspace6
+assign [class="Skype"] $workspace9
 assign [class="Spotify"] $workspace10
 assign [class="Rhythmbox"] $workspace10
 
@@ -209,14 +213,19 @@ bindsym XF86AudioPrev exec playerctl previous
 exec spotify
 exec firefox
 exec gnome-terminal
-exec_always feh --bg-scale '/home/jake/Pictures/1442647355944.jpg'
+exec_always feh --bg-scale '/home/jake/Pictures/1442606176792.jpg'
 exec_always compton -f
 
 for_window [class="qTox"] floating enable
 for_window [class="Pavucontrol"] floating enable
-#for_window [class="Skype"] floating enable
 for_window [class="obs"] floating enable
-for_window [class="Steam"] floating enable
+for_window [class="Atom"] border pixel 3
 
 bindsym Print exec scrot
 bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$rofi-bg" -bg "$rofi-bg" -fg "$text-color" -hlbg "$rofi-bg" -hlfg "#9575cd" -font "System San Francisco Display 10"
+
+smart_gaps on
+gaps inner 20
+gaps outer 20
+
+new_window 1pixel
