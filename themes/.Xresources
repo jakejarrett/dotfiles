@@ -1,0 +1,38 @@
+# Pastel Xresources file
+! special
+*.foreground:   #e3e2dc
+*.background:   #3f454f
+*.cursorColor:  #e3e2dc
+
+! black
+*.color0:       #e3e2dc
+*.color8:       #b3b3b3
+
+! red
+*.color1:       #ffffff
+*.color9:       #ffd1dc
+
+! green
+*.color2:       #f38d82
+*.color10:      #f38d82
+
+! yellow
+*.color3:       #9691cb
+*.color11:      #d1deff
+
+! blue
+*.color4:       #9691cb
+*.color12:      #fee9a1
+
+! magenta
+*.color5:       #868891
+*.color13:      #e89288
+
+! cyan
+*.color6:       #b1b2b8
+*.color14:      #e597d6
+
+! white
+*.color7:       #e3e2dc
+*.color15:      #e3e2dc
+

@@ -1,5 +1,5 @@
 # dotfiles
-![Screenshot](https://i.imgur.com/WRDSGpk.png)
+![Screenshot](https://i.imgur.com/NcBgg15.png)
 
 ### Setup
 Linux Distro `Ubuntu 15.10` <br />
