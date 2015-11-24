@@ -211,7 +211,6 @@ bindsym XF86AudioPause exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-exec spotify
 exec firefox
 exec gnome-terminal
 exec_always feh --bg-scale '/home/jake/Pictures/1442606176792.jpg'
@@ -229,4 +228,4 @@ smart_gaps on
 gaps inner 10
 #gaps outer 10
 
-new_window 1pixel
+new_window pixel 4
