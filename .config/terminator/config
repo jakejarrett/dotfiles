@@ -1,0 +1,32 @@
+[global_config]
+  title_font = monofur for Powerline 11
+  title_inactive_bg_color = "#b3b3b3"
+  title_inactive_fg_color = "#e3e2dc"
+  title_transmit_bg_color = "#e3e2dc"
+  title_transmit_fg_color = "#e3e2dc"
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_color = "#3f454f"
+    background_image = None
+    cursor_color = "#e3e2dc"
+    font = monofur for Powerline 11
+    foreground_color = "#e3e2dc"
+    palette = "#e3e2dc:#ffffff:#f38d82:#9691cb:#9691cb:#868891:#b1b2b8:#e3e2dc:#b3b3b3:#ffd1dc:#f38d82:#d1deff:#fee9a1:#e89288:#e597d6:#e3e2dc"
+    scroll_on_keystroke = False
+    scroll_on_output = False
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
