@@ -21,3 +21,6 @@ source ~/.nvm/nvm.sh
 
 # Aliases
 source ~/.zsh_aliases
+
+# Helper Scripts
+source ~/.zsh_scripts
